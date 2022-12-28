@@ -31,7 +31,7 @@ dependencies {
     implementation("org.mongodb:mongodb-driver-sync:4.8.1")
 
     // Translate
-    implementation("aws.sdk.kotlin:translate:0.18.0-beta")
+    implementation("aws.sdk.kotlin:translate:0.19.2-beta")
 
     //Universalis
     implementation("org.jsoup:jsoup:1.15.3")
