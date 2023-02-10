@@ -43,7 +43,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
     // Translate
-    implementation("aws.sdk.kotlin:translate:0.20.0-beta")
+    implementation("aws.sdk.kotlin:translate:0.20.2-beta")
 
     // Universalis
     implementation("cloud.drakon:ktuniversalis:1.0.1")
