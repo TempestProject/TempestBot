@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation("cloud.drakon:ktdiscord:5.0.1")
+    implementation("cloud.drakon:ktdiscord:5.1.1")
 
     implementation("com.amazonaws:aws-lambda-java-core:1.2.2")
     implementation("org.mongodb:mongodb-driver-sync:4.8.2")
