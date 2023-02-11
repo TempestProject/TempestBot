@@ -35,7 +35,7 @@ dependencies {
     implementation("cloud.drakon:ktdiscord:5.0.1")
 
     implementation("com.amazonaws:aws-lambda-java-core:1.2.2")
-    implementation("org.mongodb:mongodb-driver-sync:4.8.2")
+    implementation("org.mongodb:mongodb-driver-sync:4.9.0")
 
     // Rory
     val ktorVersion = "2.2.3"
