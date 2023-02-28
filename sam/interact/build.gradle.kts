@@ -38,7 +38,7 @@ dependencies {
     implementation("org.mongodb:mongodb-driver-sync:4.9.0")
 
     // Rory
-    val ktorVersion = "2.2.3"
+    val ktorVersion = "2.2.4"
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
