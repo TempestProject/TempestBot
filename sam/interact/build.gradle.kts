@@ -39,7 +39,7 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
 
     implementation("com.amazonaws:aws-lambda-java-core:1.2.2")
-    implementation("org.mongodb:mongodb-driver-sync:4.9.0")
+    implementation("org.mongodb:mongodb-driver-sync:4.9.1")
 
     // Lodestone
     implementation("cloud.drakon:ktlodestone:1.0.0")
