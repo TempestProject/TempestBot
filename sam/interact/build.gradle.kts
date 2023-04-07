@@ -45,7 +45,7 @@ dependencies {
     implementation("cloud.drakon:ktlodestone:1.0.0")
 
     // Translate
-    implementation("aws.sdk.kotlin:translate:0.21.4-beta")
+    implementation("aws.sdk.kotlin:translate:0.21.5-beta")
 
     // Universalis
     implementation("cloud.drakon:ktuniversalis:1.0.1")
