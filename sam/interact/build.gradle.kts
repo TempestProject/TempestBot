@@ -42,7 +42,7 @@ dependencies {
     implementation("org.mongodb:mongodb-driver-sync:4.9.0")
 
     // Lodestone
-    implementation("cloud.drakon:ktlodestone:1.0.0")
+    implementation("cloud.drakon:ktlodestone:6.0.0")
 
     // Translate
     implementation("aws.sdk.kotlin:translate:0.21.4-beta")
