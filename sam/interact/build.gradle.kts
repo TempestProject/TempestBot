@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    implementation("cloud.drakon:ktdiscord:6.0.0")
+    implementation("cloud.drakon:ktdiscord:6.1.0")
 
     val ktorVersion = "2.3.2"
     implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
