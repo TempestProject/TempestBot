@@ -49,7 +49,7 @@ dependencies {
 
     // Universalis
     implementation("cloud.drakon:ktuniversalis:2.0.0")
-    implementation("org.jsoup:jsoup:1.15.4")
+    implementation("org.jsoup:jsoup:1.16.1")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
