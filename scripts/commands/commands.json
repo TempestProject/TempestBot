@@ -96,56 +96,6 @@
         ]
     },
     {
-        "name": "eorzeadatabase",
-        "description": "Eorzea Database",
-        "default_member_permissions": 0,
-        "type": 1,
-        "options": [
-            {
-                "name": "index",
-                "description": "Search an index",
-                "type": 3,
-                "required": true,
-                "choices": [
-                    {
-                        "name": "Item",
-                        "value": "item"
-                    }
-                ]
-            },
-            {
-                "name": "string",
-                "description": "The string to search for",
-                "type": 3,
-                "required": true
-            },
-            {
-                "name": "language",
-                "description": "Handle the request and the response in the specified language",
-                "type": 3,
-                "required": false,
-                "choices": [
-                    {
-                        "name": "English",
-                        "value": "en"
-                    },
-                    {
-                        "name": "日本人",
-                        "value": "ja"
-                    },
-                    {
-                        "name": "Deutsch",
-                        "value": "de"
-                    },
-                    {
-                        "name": "Français",
-                        "value": "fr"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "name": "image",
         "description": "Creates an image from a prompt using DALL-E 2",
         "default_member_permissions": 0,
@@ -156,78 +106,6 @@
                 "description": "The prompt to create an image from",
                 "type": 3,
                 "required": true
-            }
-        ]
-    },
-    {
-        "name": "lodestone",
-        "description": "Final Fantasy XIV, The Lodestone",
-        "default_member_permissions": 0,
-        "dm_permission": false,
-        "type": 1,
-        "options": [
-            {
-                "name": "card",
-                "description": "Get a character card of a users Final Fantasy XIV character",
-                "type": 1,
-                "options": [
-                    {
-                        "name": "user",
-                        "description": "The user to get a Lodestone card for",
-                        "type": 6,
-                        "required": true
-                    }
-                ]
-            },
-            {
-                "name": "link",
-                "description": "Link your Discord account to a Final Fantasy XIV character",
-                "type": 1,
-                "options": [
-                    {
-                        "name": "character",
-                        "description": "The name of the character to link your Discord account to",
-                        "type": 3,
-                        "required": true
-                    },
-                    {
-                        "name": "world",
-                        "description": "The world of the character to link your Discord account to",
-                        "type": 3,
-                        "required": true
-                    }
-                ]
-            },
-            {
-                "name": "unlink",
-                "description": "Unlink your Discord account from a Final Fantasy XIV character",
-                "type": 1
-            },
-            {
-                "name": "portrait",
-                "description": "Get a portrait of a users Final Fantasy XIV character",
-                "type": 1,
-                "options": [
-                    {
-                        "name": "user",
-                        "description": "The user to get a Lodestone portrait for",
-                        "type": 6,
-                        "required": true
-                    }
-                ]
-            },
-            {
-                "name": "profile",
-                "description": "Get a profile of a users Final Fantasy XIV character",
-                "type": 1,
-                "options": [
-                    {
-                        "name": "user",
-                        "description": "The user to get a Lodestone profile for",
-                        "type": 6,
-                        "required": true
-                    }
-                ]
             }
         ]
     },
@@ -276,31 +154,5 @@
         "name": "Translate",
         "default_member_permissions": 0,
         "type": 3
-    },
-    {
-        "name": "universalis",
-        "description": "Get Final Fantasy XIV market board item information",
-        "default_member_permissions": 0,
-        "type": 1,
-        "options": [
-            {
-                "name": "item",
-                "description": "The item to search for",
-                "type": 3,
-                "required": true
-            },
-            {
-                "name": "world",
-                "description": "The World/Data Center/Region to search",
-                "type": 3,
-                "required": true
-            },
-            {
-                "name": "high quality",
-                "description": "Only show high quality item listings or vice versa",
-                "type": 5,
-                "required": false
-            }
-        ]
     }
 ]
