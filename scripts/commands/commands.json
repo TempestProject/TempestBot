@@ -2,7 +2,6 @@
     {
         "name": "citation",
         "description": "Citations",
-        "default_member_permissions": 0,
         "dm_permission": false,
         "type": 1,
         "options": [
@@ -65,20 +64,17 @@
     },
     {
         "name": "Add citation",
-        "default_member_permissions": 0,
         "dm_permission": false,
         "type": 3
     },
     {
         "name": "Get citation",
-        "default_member_permissions": 0,
         "dm_permission": false,
         "type": 2
     },
     {
         "name": "chat",
         "description": "Chat with GPT-4",
-        "default_member_permissions": 0,
         "type": 1,
         "options": [
             {
@@ -98,7 +94,6 @@
     {
         "name": "image",
         "description": "Creates an image from a prompt using DALL-E 2",
-        "default_member_permissions": 0,
         "type": 1,
         "options": [
             {
@@ -112,7 +107,6 @@
     {
         "name": "translate",
         "description": "Translate to or from other languages",
-        "default_member_permissions": 0,
         "type": 1,
         "options": [
             {
@@ -137,7 +131,6 @@
     },
     {
         "name": "Translate",
-        "default_member_permissions": 0,
         "type": 3
     }
 ]
