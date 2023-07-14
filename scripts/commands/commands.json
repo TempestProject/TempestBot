@@ -77,13 +77,13 @@
     },
     {
         "name": "chat",
-        "description": "Creates a completion for the chat message using GPT-4",
+        "description": "Chat with GPT-4",
         "default_member_permissions": 0,
         "type": 1,
         "options": [
             {
                 "name": "message",
-                "description": "The message to generate chat completions for",
+                "description": "The message to send to GPT-4",
                 "type": 3,
                 "required": true
             },

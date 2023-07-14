@@ -11,7 +11,7 @@ _TempestBot_ is a Discord bot that runs on AWS Lambda.
 ## Features
 
 - Citations: Save quotes from guild members and repost them. Requires users to opt-in.
-- Chat: Creates a completion for a chat message using GPT-4
+- Chat: Chat with GPT-4
 - Images: Creates an image from a prompt using DALL-E 2
 - Translate: Translate messages using AWS Translate.
 - ~~Subject Access Request: The bot will DM you with all of the information that it holds on your Discord account.~~
