@@ -8,7 +8,6 @@ import cloud.drakon.tempestbot.interact.api.openai.OpenAI
 import cloud.drakon.tempestbot.interact.commands.citations.citationHandler
 import cloud.drakon.tempestbot.interact.commands.openai.chat
 import cloud.drakon.tempestbot.interact.commands.openai.image
-import cloud.drakon.tempestbot.interact.commands.rory
 import cloud.drakon.tempestbot.interact.commands.translate
 import com.amazonaws.services.lambda.runtime.Context
 import com.amazonaws.services.lambda.runtime.RequestStreamHandler
@@ -66,7 +65,6 @@ class Handler: RequestStreamHandler {
 
                         "chat" -> chat(applicationCommand)
                         "image" -> image(applicationCommand)
-                        "rory" -> rory(applicationCommand)
 
                         "translate", "Translate" -> translate(
                             applicationCommand, logger

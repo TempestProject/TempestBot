@@ -110,21 +110,6 @@
         ]
     },
     {
-        "name": "rory",
-        "description": "cat",
-        "default_member_permissions": 0,
-        "type": 1,
-        "options": [
-            {
-                "name": "id",
-                "description": "Rory ID",
-                "type": 4,
-                "max_value": 123,
-                "required": false
-            }
-        ]
-    },
-    {
         "name": "translate",
         "description": "Translate to or from other languages",
         "default_member_permissions": 0,
