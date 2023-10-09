@@ -58,7 +58,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 
     // Translate
-    implementation("aws.sdk.kotlin:translate:0.28.1-beta")
+    implementation("aws.sdk.kotlin:translate:0.32.4-beta")
 
     testImplementation(kotlin("test"))
 }
