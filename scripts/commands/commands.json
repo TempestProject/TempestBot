@@ -105,19 +105,15 @@
             {
                 "name": "style",
                 "description": "The style of the generated image",
-                "type": 1,
+                "type": 3,
                 "options": [
                     {
                         "name": "vivid",
                         "description": "Causes the model to lean towards generating hyper-real and dramatic images",
-                        "type": 3,
-                        "required": true
                     },
                     {
                         "name": "natural",
                         "description": "Causes the model to produce more natural, less hyper-real looking images",
-                        "type": 3,
-                        "required": true
                     }
                 ]
             }
