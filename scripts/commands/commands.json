@@ -101,6 +101,25 @@
                 "description": "The prompt to create an image from",
                 "type": 3,
                 "required": true
+            },
+            {
+                "name": "style",
+                "description": "The style of the generated image",
+                "type": 1,
+                "options": [
+                    {
+                        "name": "vivid",
+                        "description": "Vivid causes the model to lean towards generating hyper-real and dramatic images",
+                        "type": 3,
+                        "required": true
+                    },
+                    {
+                        "name": "natural",
+                        "description": "Natural causes the model to produce more natural, less hyper-real looking images",
+                        "type": 3,
+                        "required": true
+                    }
+                ]
             }
         ]
     },

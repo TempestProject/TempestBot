@@ -12,16 +12,23 @@ import java.util.Base64
 
 suspend fun image(event: Interaction<ApplicationCommandData>) {
     lateinit var prompt: String
+    var style: String? = null
 
-    for (i in event.data !!.options !!) {
+    for (i in event.data!!.options!!) {
         when (i.name) {
-            "prompt" -> prompt = i.value !!
+            "prompt" -> prompt = i.value!!
+            "style" -> style = i.value!!
         }
     }
 
-    val createdImage =
-        Base64.getDecoder()
-            .decode(openAi.createImage(ImageRequest(prompt)).data[0].b64Json)
+    val createdImage = Base64.getDecoder()
+        .decode(
+            openAi.createImage(
+                ImageRequest(prompt, style = style)
+            )
+                .data[0]
+                .b64Json
+        )
 
     ktDiscord.editOriginalInteractionResponse(
         EditWebhookMessage(
