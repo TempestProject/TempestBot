@@ -93,7 +93,7 @@
     },
     {
         "name": "image",
-        "description": "Creates an image from a prompt using DALL-E 2",
+        "description": "Creates an image from a prompt using DALL-E 3",
         "type": 1,
         "options": [
             {
@@ -109,13 +109,13 @@
                 "options": [
                     {
                         "name": "vivid",
-                        "description": "Vivid causes the model to lean towards generating hyper-real and dramatic images",
+                        "description": "Causes the model to lean towards generating hyper-real and dramatic images",
                         "type": 3,
                         "required": true
                     },
                     {
                         "name": "natural",
-                        "description": "Natural causes the model to produce more natural, less hyper-real looking images",
+                        "description": "Causes the model to produce more natural, less hyper-real looking images",
                         "type": 3,
                         "required": true
                     }
