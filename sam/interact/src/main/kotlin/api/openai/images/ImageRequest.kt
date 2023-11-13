@@ -11,9 +11,8 @@ import kotlinx.serialization.Serializable
 class ImageRequest(
     val prompt: String,
     @EncodeDefault val model: String = "dall-e-3",
-    @EncodeDefault val quality: String = "hd",
     @EncodeDefault @SerialName("response_format")
     val responseFormat: String = "b64_json",
-    @EncodeDefault val size: String = "1792x1024",
+    @EncodeDefault val size: String = "1024×1024",
     val style: String? = null,
 )
