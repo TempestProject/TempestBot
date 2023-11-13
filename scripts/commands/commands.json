@@ -108,12 +108,12 @@
                 "type": 3,
                 "choices": [
                     {
-                        "name": "vivid",
-                        "description": "Causes the model to lean towards generating hyper-real and dramatic images"
+                        "name": "Vivid",
+                        "value": "vivid"
                     },
                     {
-                        "name": "natural",
-                        "description": "Causes the model to produce more natural, less hyper-real looking images"
+                        "name": "Natural",
+                        "value": "natural"
                     }
                 ]
             }
