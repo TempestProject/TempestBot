@@ -109,11 +109,11 @@
                 "options": [
                     {
                         "name": "vivid",
-                        "description": "Causes the model to lean towards generating hyper-real and dramatic images",
+                        "description": "Causes the model to lean towards generating hyper-real and dramatic images"
                     },
                     {
                         "name": "natural",
-                        "description": "Causes the model to produce more natural, less hyper-real looking images",
+                        "description": "Causes the model to produce more natural, less hyper-real looking images"
                     }
                 ]
             }
