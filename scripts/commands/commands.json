@@ -106,7 +106,7 @@
                 "name": "style",
                 "description": "The style of the generated image",
                 "type": 3,
-                "options": [
+                "choices": [
                     {
                         "name": "vivid",
                         "description": "Causes the model to lean towards generating hyper-real and dramatic images"
