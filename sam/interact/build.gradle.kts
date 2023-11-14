@@ -54,7 +54,7 @@ dependencies {
 
     implementation("org.mongodb:mongodb-driver-sync:4.10.1")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 
     // Translate
