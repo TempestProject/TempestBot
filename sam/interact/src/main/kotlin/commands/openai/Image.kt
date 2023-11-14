@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalEncodingApi::class)
+
 package cloud.drakon.tempestbot.interact.commands.openai
 
 import cloud.drakon.ktdiscord.channel.Attachment
@@ -8,7 +10,8 @@ import cloud.drakon.ktdiscord.webhook.EditWebhookMessage
 import cloud.drakon.tempestbot.interact.Handler.Companion.ktDiscord
 import cloud.drakon.tempestbot.interact.Handler.Companion.openAi
 import cloud.drakon.tempestbot.interact.api.openai.images.ImageRequest
-import java.util.Base64
+import kotlin.io.encoding.Base64
+import kotlin.io.encoding.ExperimentalEncodingApi
 
 suspend fun image(event: Interaction<ApplicationCommandData>) {
     lateinit var prompt: String
@@ -21,14 +24,7 @@ suspend fun image(event: Interaction<ApplicationCommandData>) {
         }
     }
 
-    val createdImage = Base64.getDecoder()
-        .decode(
-            openAi.createImage(
-                ImageRequest(prompt, style = style)
-            )
-                .data[0]
-                .b64Json
-        )
+    val createdImage = openAi.createImage(ImageRequest(prompt, style = style)).data[0]
 
     ktDiscord.editOriginalInteractionResponse(
         EditWebhookMessage(
@@ -37,11 +33,14 @@ suspend fun image(event: Interaction<ApplicationCommandData>) {
                     id = "0",
                     filename = "${prompt}.png",
                     contentType = "image/png",
-                    bytes = createdImage
+                    bytes = Base64.decode(createdImage.b64Json)
                 )
             ), attachments = arrayOf(
                 Attachment(
-                    id = "0", filename = "${prompt}.png", ephemeral = true
+                    id = "0",
+                    filename = "${prompt}.png",
+                    description = createdImage.revisedPrompt,
+                    ephemeral = true
                 )
             )
         ), event.token
