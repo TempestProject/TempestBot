@@ -60,7 +60,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
 
     // Translate
-    implementation("aws.sdk.kotlin:translate:0.34.7-beta")
+    implementation("aws.sdk.kotlin:translate:0.35.1-beta")
 
     testImplementation(kotlin("test"))
 }
