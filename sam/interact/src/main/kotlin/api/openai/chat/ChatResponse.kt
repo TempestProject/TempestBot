@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
     val choices: Array<ChatChoice>,
     val created: Int,
     val model: String,
-    @SerialName("system_fingerprint") val systemFingerprint: String,
+    @SerialName("system_fingerprint") val systemFingerprint: String? = null,
     @SerialName("object") val chatObject: String,
     val usage: ChatUsage,
 )
