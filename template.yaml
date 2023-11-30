@@ -39,7 +39,7 @@ Resources:
     Properties:
       CodeUri: sam/interact
       Handler: cloud.drakon.tempestbot.interact.Handler::handleRequest
-      Runtime: java17
+      Runtime: java21
       Architectures:
         - arm64
       MemorySize: 2048
