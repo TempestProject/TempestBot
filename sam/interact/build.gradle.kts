@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val kotlinVersion = "1.9.20"
+    val kotlinVersion = "1.9.21"
 
     kotlin("jvm") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.serialization") version kotlinVersion
@@ -57,10 +57,10 @@ dependencies {
     implementation("org.mongodb:mongodb-driver-sync:4.11.1")
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
 
     // Translate
-    implementation("aws.sdk.kotlin:translate:0.34.7-beta")
+    implementation("aws.sdk.kotlin:translate:1.0.7")
 
     testImplementation(kotlin("test"))
 }
