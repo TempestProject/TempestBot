@@ -5,9 +5,10 @@ import kotlinx.serialization.Serializable
 
 @Serializable class ChatResponse(
     val id: String,
-    @SerialName("object") val chatObject: String,
+    val choices: Array<ChatChoice>,
     val created: Int,
     val model: String,
-    val choices: Array<ChatChoice>,
+    @SerialName("system_fingerprint") val systemFingerprint: String,
+    @SerialName("object") val chatObject: String,
     val usage: ChatUsage,
 )
